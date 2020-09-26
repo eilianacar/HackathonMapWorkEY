@@ -1,0 +1,22 @@
+import firebase from 'firebase'
+import app from 'firebase/app'
+import 'firebase/firestore'
+import 'firebase/auth'
+
+const firebaseConfig = {
+    apiKey: "AIzaSyBNuJgMAXFZlQuQsQUSRkvpe62s_meokuw",
+    authDomain: "mapworkey.firebaseapp.com",
+    databaseURL: "https://mapworkey.firebaseio.com",
+    projectId: "mapworkey",
+    storageBucket: "mapworkey.appspot.com",
+    messagingSenderId: "425283868596",
+    appId: "1:425283868596:web:ab1c73ce4dc33e1fac84e1"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  const db = app.firestore();
+  const auth = app.auth();
+
+  export default {auth, db}
+  
