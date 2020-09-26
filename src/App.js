@@ -1,10 +1,5 @@
-import { Feedback, Map, WbIncandescentRounded } from '@material-ui/icons';
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
+import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
 import EFeedBack from './employeeViews/EFeedBack';
 import EMap from './employeeViews/EMap';
 import EProfile from './employeeViews/EProfile';
@@ -20,6 +15,7 @@ import Birthday from './views/Birthday';
 import Home from './views/Home';
 import Login from './views/Login';
 import Resgister from './views/Resgister';
+import Feedback from './leaderViews/FeedBack';
 
 function App() {
   return (
@@ -50,38 +46,31 @@ function App() {
           <Profile/>
         </Route>
         <Route path="/Map">
-        <MapLeader/>
+          <MapLeader/>
         </Route>
         <Route path="/Feedback">
-        <Feedback/>
+          <Feedback/>
         </Route>
         <Route path="/EmployeeTeam">
-       <ETeam/>
+          <ETeam/>
         </Route>
         <Route path="/EmployeeStar">
-        <EStars/>
+         <EStars/>
         </Route>
         <Route path="/EmployeeSingle">
-        <ESingle/>
+          <ESingle/>
         </Route>
         <Route path="/EmployeeProfile">
-        <EProfile/>
+          <EProfile/>
         </Route>
         <Route path="/EmployeeMap">
-        <EMap/>
+          <EMap/>
         </Route>
         <Route path="/EmployeeFeedBack">
-        <EFeedBack/>
+         <EFeedBack/>
         </Route>
-
-        
-        
-
-
-
       </Switch>
     </Router>
-    
   );
 }
 
