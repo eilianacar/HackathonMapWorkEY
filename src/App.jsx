@@ -69,8 +69,13 @@ function App() {
         <Route path="/EmployeeFeedBack">
          <EFeedBack/>
         </Route>
+        <Route exact path="/login" component={ Login } />
+        <Route path="/EmployeeMap" component={ EMap } />
+        <Route path="/Map" component={ MapLeader } />
+        <Route path="/register" component={ Resgister } />
       </Switch>
     </Router>
+    
   );
 }
 
