@@ -1,18 +1,29 @@
 import React from 'react'
 import { NavLink} from 'react-router-dom'
-import Button from '@material-ui/core/Button';
-
+import '../css/home.css';
+import logo from '../img/logo1.png';
+import Carousel from '../components/Carousel'; 
 
 const Home = () => {
   return (
-    <div>
-      <h1>Hola soy home</h1>
+    <>
+    <div className="contHome">
+      <img src={logo} alt='logo' className="logoHome"/>
+       <div className="contButtonHome">
       <NavLink to='/login'>
-        <Button variant="contained" color="secondary">
-          Entrar
-        </Button>
+        <button className="btnRegister">
+            Ingresar
+        </button>
       </NavLink>
+      <NavLink to='/register'>
+        <button className="btnRegister">
+          Registrar
+        </button>
+      </NavLink>
+      </div>
     </div>
+     <Carousel />
+     </>
   )
 }
 
