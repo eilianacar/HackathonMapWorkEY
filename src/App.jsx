@@ -16,6 +16,9 @@ import Home from './views/Home';
 import Login from './views/Login';
 import Resgister from './views/Resgister';
 import Feedback from './leaderViews/FeedBack';
+import Menu  from './components/Menu';
+import Task from './leaderViews/Task';
+
 
 function App() {
   return (
@@ -42,7 +45,7 @@ function App() {
         <Route path="/Single">
           <SingleLeader/>
         </Route>
-        <Route path="/Team">
+        <Route path="/Profile">
           <Profile/>
         </Route>
         <Route path="/Map">
@@ -68,6 +71,12 @@ function App() {
         </Route>
         <Route path="/EmployeeFeedBack">
          <EFeedBack/>
+        </Route>
+        <Route path="/Menu">
+         <Menu/>
+        </Route>
+        <Route path="/Task">
+         <Task/>
         </Route>
         <Route exact path="/login" component={ Login } />
         <Route path="/EmployeeMap" component={ EMap } />
