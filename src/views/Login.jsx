@@ -41,7 +41,7 @@ const Login = (props) => {
                 const user = snap.data();
                 console.log('entro', user)
                   if (user.perfil === "lider"){
-                  props.history.push("/Map")
+                  props.history.push("/Menu")
                 } else {
                     props.history.push('/EmployeeMap')
                 }  

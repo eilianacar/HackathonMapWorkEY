@@ -1,10 +1,15 @@
 import React from 'react'
+import AddTaks from '../components/AddTaks'
+import '../css/task.css'
+import NavbarPage from './NavbarPage'
 
 const Task = () => {
     return (
-        <div>
-            <h1>Hola soy tareas</h1>
-        </div>
+        <>
+        <NavbarPage />
+        <h1>tarea</h1>
+        <AddTaks />
+        </>
     )
 }
 

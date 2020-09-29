@@ -1,0 +1,31 @@
+.contMap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contAvatar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background: thistle;
+}
+
+.avatarmap{
+    width: 20%;
+    z-index: 1;
+    position: absolute;
+    padding-left:2px ;
+}
+
+.avatarmap:hover{
+    transform:scale(1.1);
+}
+
+.circulo{
+    width: 70px;
+    height: 70px;
+    background-color: blue;
+    border-radius: 50%;
+    margin-top:80px ;
+}

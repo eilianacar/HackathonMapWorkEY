@@ -1,6 +1,7 @@
 .contHome{
     background-color: #19181E;
     background-size: 100% 100%;
+    width: 100%;
     height: 100vh;
     padding-top: 1px;
     display: flex;
@@ -37,3 +38,18 @@
     filter: drop-shadow(0px 0px 9px #E8DB65);
     border-radius: 20px;
 }
+
+@media(min-width:601px)  {
+    .logoHome{
+        max-width: 30%;
+        margin-top: 34px;
+    }
+    
+}
+@media(min-width:1920px) and (max-width:2560px) {
+    .logoHome{
+        max-width: 30%;
+        margin-top: 34px;
+    }
+    
+  }

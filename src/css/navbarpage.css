@@ -1,0 +1,23 @@
+img.Logo-Header {
+    width: 25%;
+}
+
+.bg-dark {
+    background-color: #19181E!important;
+}
+
+div#navbarText li {
+    margin: 10px;
+    
+}
+
+div#navbarText li a{
+    color: white;
+    font-family: 'Montserrat';
+    text-decoration: none;
+}
+
+p.textLogOut {
+    color: white;
+    margin: 0px 10px 0px 10px;
+}

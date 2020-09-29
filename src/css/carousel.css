@@ -1,8 +1,43 @@
-.textSlider {
+ .textSlider {
   color : white;
   font-family: 'Montserrat';
   font-size: 20px;
   margin-top: 67%;
   padding: 20px;
+}
+
+@media(min-width:601px)  {
+  .logoHome{
+      max-width: 30%;
+      margin-top: 34px;
+  }
+  .textSlider {
+    font-size: 25px;
+    margin-top: 32%;
+  }
+  .contButtonHome {
+    margin-top: 34%;
+}
+}
+
+@media (min-width: 1024px) {
+  .textSlider {
+    font-size: 25px;
+    margin-top: 27%;
+  }
+  .contButtonHome {
+    margin-top: 20%;
+}
+}
+
+ @media(min-width:1920px) and (max-width:2560px) {
+  .textSlider {
+    font-size: 20px;
+    margin-top: 32%;
+    padding: 20px;
+  }
+  .contButtonHome {
+    margin-top: 9%;
+  }
 }
 

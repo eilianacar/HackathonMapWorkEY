@@ -20,7 +20,7 @@ const Carousel = () => {
                 <MDBCarouselInner>
                     <MDBCarouselItem itemId="1">
                         <MDBView>
-                            <p className="textSlider" >Texto¿Te gusta viajar por chile?</p>
+                            <p className="textSlider" >No estamos juntos pero estamos conectados</p>
    {/*                          <img
                                 className="fotos"
                                 alt="Primary slide"
@@ -30,7 +30,7 @@ const Carousel = () => {
                     </MDBCarouselItem>
                     <MDBCarouselItem itemId="2">
                         <MDBView>
-                            <p className="textSlider">publica tus mejores picadas</p>
+                            <p className="textSlider">Crea y asigna tareas a tu equipo</p>
 {/*                             <img
                                 className="fotos"
                                 src={foto2}
@@ -40,7 +40,7 @@ const Carousel = () => {
                     </MDBCarouselItem>
                     <MDBCarouselItem itemId="3">
                         <MDBView>
-                            <p className="textSlider">conoce a otros viajeros</p>
+                            <p className="textSlider">Envía y recibe feedback de tus tareas</p>
 {/*                             <img
                                 className="fotos"
                                 src={foto3}
@@ -50,7 +50,7 @@ const Carousel = () => {
                     </MDBCarouselItem>
                     <MDBCarouselItem itemId="4">
                         <MDBView>
-                            <p className="textSlider">recorrer chile ya no es una excusa</p>
+                            <p className="textSlider">Alcanza la meta y obten un premio</p>
 {/*                             <img
                                 className="fotos"
                                 src={foto4}
