@@ -1,0 +1,22 @@
+{
+  "employeeTasks":{
+    "employee":{
+      "id": "001",
+      "name": "Eiliana",
+      "tasks": [
+        {
+          "id":"001",
+          "nameTask":"Selección de personal",
+          "descriptionTask":"Realizar la selección de personal para el puesto de Front-End para el departamento de sistemas",
+          "completed": true          
+        },
+        {
+          "id":"001",
+          "nameTask":"Selección de personal",
+          "descriptionTask":"Realizar la selección de personal para el puesto de Front-End para el departamento de sistemas",
+          "completed": false
+        }
+      ]
+    }
+  }
+}
