@@ -18,6 +18,7 @@ import Resgister from './views/Resgister';
 import Feedback from './leaderViews/FeedBack';
 import Menu  from './components/Menu';
 import Task from './leaderViews/Task';
+import { EmployeeMap } from '../src/views/employee';
 
 
 function App() {
@@ -78,6 +79,10 @@ function App() {
         <Route path="/Task">
          <Task/>
         </Route>
+        <Route path="/employee-map">
+         <EmployeeMap/>
+        </Route>
+        
         <Route exact path="/login" component={ Login } />
         <Route path="/EmployeeMap" component={ EMap } />
         <Route path="/Map" component={ MapLeader } />
