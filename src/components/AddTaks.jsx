@@ -1,6 +1,27 @@
 import React from 'react'
 import { db} from '../firebase'
 import '../css/addtaks.css'
+import NavbarPage from '../leaderViews/NavbarPage'
+import Footer from './Footer'
+import { makeStyles } from '@material-ui/core/styles';
+import Modal from '@material-ui/core/Modal';
+import Backdrop from '@material-ui/core/Backdrop';
+import Fade from '@material-ui/core/Fade';
+
+
+const useStyles = makeStyles((theme) => ({
+  modal: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  paper: {
+    backgroundColor: theme.palette.background.paper,
+    border: '2px solid #000',
+    boxShadow: theme.shadows[5],
+    padding: theme.spacing(2, 4, 3),
+  },
+}));
 
 const AddTaks = () => {
     
@@ -11,6 +32,17 @@ const AddTaks = () => {
   const [nivel, setNivel] = React.useState('')
   const [asignar, setAsignar] = React.useState('')
   const [start, setStart] = React.useState(0)
+
+  const classes = useStyles();
+  const [open, setOpen] = React.useState(false);
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
     const add = async (e) => {
         e.preventDefault()
@@ -49,8 +81,15 @@ const AddTaks = () => {
     
 
     return (
-        <div>
+      <>
+      <NavbarPage/>
+     <div className="contGeneralAddTask">
+      <div className="titleAddTask">
+        ASIGNAR TAREA
+      </div>
+        <div className="formAddTask">
             <form className="formTarea">
+              <p>Nombre Tarea</p>
             <input 
               type="text"
               placeholder="Ingrese tarea"
@@ -58,6 +97,7 @@ const AddTaks = () => {
               onChange={e => setTarea(e.target.value)}
               value={tarea}
             />
+            <p>Fecha ingreso de tarea</p>
             <input 
               type="date"
               placeholder="Fecha"
@@ -65,6 +105,7 @@ const AddTaks = () => {
               onChange={e => setFecha(e.target.value)}
               value={fecha}
             />
+            <p>Descripcion de tarea</p>
             <input 
               type="text"
               placeholder="Descripción"
@@ -72,25 +113,70 @@ const AddTaks = () => {
               onChange={e => setDescrib(e.target.value)}
               value={describ}
             />
-            <select name="select" value={asignar} onChange={e => setAsignar(e.target.value)} className="inputTarea">
+            
+            <div className="contAddTask">
+            <p>Asignar</p>
+               <button 
+            className="btnAddTask"
+            onClick={handleOpen}
+            >
+            Single
+            </button>
+            <button 
+            className="btnAddTask"
+            onClick={handleOpen}
+            >
+            Team
+            </button>
+            </div>
+            {/* <select name="select" value={asignar} onChange={e => setAsignar(e.target.value)} className="inputTarea">
                 <option aria-label="None" value="" />
                 <option value="single">Single</option> 
                 <option value="team">Team</option>
-            </select>
+            </select> */}
+            <div className="contNivelDificultad">
+            <p>Nivel de dificultad</p>
             <select name="select" value={nivel} onChange={e => setNivel(e.target.value)} className="inputTarea">
                 <option aria-label="Selecciona el nivel" value="" />
                 <option value="nivel1">Nivel 1</option> 
                 <option value="nivel2">Nivel 2</option>
                 <option value="nivel3">Nivel 3</option>
             </select>
+            </div>
             <button 
-            className=""
+            className="btnAddTaskFinal"
             onClick={add}
             >
             Agregar
             </button>
           </form>
         </div>
+        </div>
+
+        <div>
+
+      <Modal
+        aria-labelledby="transition-modal-title"
+        aria-describedby="transition-modal-description"
+        className={classes.modal}
+        open={open}
+        onClose={handleClose}
+        closeAfterTransition
+         /*BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 500, 
+        }} */
+      >
+        <Fade in={open}>
+          <div className={classes.paper}>
+            <h2 id="transition-modal-title">Transition modal</h2>
+            <p id="transition-modal-description">react-transition-group animates me.</p>
+          </div>
+        </Fade>
+      </Modal>
+    </div>
+        <Footer/>
+        </>
     )
 }
 
