@@ -18,7 +18,7 @@ import Resgister from './views/Resgister';
 import Feedback from './leaderViews/FeedBack';
 import Menu  from './components/Menu';
 import Task from './leaderViews/Task';
-
+import AddTaks from './components/AddTaks';
 
 function App() {
   return (
@@ -77,6 +77,9 @@ function App() {
         </Route>
         <Route path="/Task">
          <Task/>
+        </Route>
+        <Route path="/AddTaks">
+         <AddTaks/>
         </Route>
         <Route exact path="/login" component={ Login } />
         <Route path="/EmployeeMap" component={ EMap } />

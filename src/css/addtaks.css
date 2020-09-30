@@ -1,7 +1,7 @@
 .formTarea{
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    margin-top: 103px;
 }    
 
 .inputTarea{
@@ -11,4 +11,82 @@
     background: #FFFFFF;
     border-radius: 4px;
 
+}
+
+.titleAddTask{
+    text-align: left;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.formAddTask{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 61vh;
+    padding-left: 21px;
+}
+
+.contGeneralAddTask{
+    background-color: #E5E5E5;
+    width: 100%;
+    height: 84vh;
+}
+
+.inputTarea{
+    width: 330px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid #8091A5;
+}
+
+.btnAddTask{
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: none; 
+    font-family: 'Montserrat';
+    font-size: 18px;
+    background: linear-gradient(180deg, #FEE600 99.99%, rgba(254, 230, 0, 0) 100%);
+    filter: drop-shadow(0px 0px 9px #E8DB65);
+}
+
+.btnAddTask:hover{
+    background: #FFFFFF;
+    filter: drop-shadow(0px 0px 9px #E8DB65);
+    border-radius: 20px;
+}
+
+.contAddTask{
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-evenly;
+    
+}
+
+.btnAddTaskFinal{
+    margin-top: 33px;
+    width: 162px;
+    height: 40px;
+    border-radius: 20px;
+    border: none; 
+    font-family: 'Montserrat';
+    font-size: 18px;
+    background: linear-gradient(180deg, #FEE600 99.99%, rgba(254, 230, 0, 0) 100%);
+    filter: drop-shadow(0px 0px 9px #E8DB65);
+}
+
+.btnAddTask:hover{
+    background: #FFFFFF;
+    filter: drop-shadow(0px 0px 9px #E8DB65);
+    border-radius: 20px;
+}
+
+.contNivelDificultad{
+    margin-top: 5px;
 }

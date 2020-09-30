@@ -1,0 +1,38 @@
+.contTask{
+    background-color:#19181E;
+    border-radius: 50%;
+    margin: 10px;
+    width: 136px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoplugin{
+    max-width: 82px;
+}
+
+.contGeneralTask{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+
+.titleTask{
+    text-align: left;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    margin-left: 10px;
+    margin-top: 12px;
+}
+
+.namelogoplugin{
+    text-align: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+}
