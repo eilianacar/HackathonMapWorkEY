@@ -2,7 +2,7 @@
   "employeeTasks":{
     "employee":{
       "id": "001",
-      "name": "Eiliana",
+      "name": "Manuel González",
       "tasks": [
         {
           "id":"001",
@@ -11,9 +11,33 @@
           "completed": true          
         },
         {
-          "id":"001",
-          "nameTask":"Selección de personal",
-          "descriptionTask":"Realizar la selección de personal para el puesto de Front-End para el departamento de sistemas",
+          "id":"002",
+          "nameTask":"Revisión Curriculum",
+          "descriptionTask":"Seleccionar curriculum a entrevistar para el puesto de Front-End",
+          "completed": false
+        },
+        {
+          "id":"003",
+          "nameTask":"Programar entrevistas",
+          "descriptionTask":"Coordinar horarios de los entrevistados y enviar correo",
+          "completed": false
+        },
+        {
+          "id":"004",
+          "nameTask":"Evaluación Psicolaboral ",
+          "descriptionTask":"Coordinar horarios para las entrevitas psicolaboral",
+          "completed": false
+        },
+        {
+          "id":"005",
+          "nameTask":"Evaluación Técnica",
+          "descriptionTask":"Coordinar horarios para las entrevitas técnica",
+          "completed": false
+        },
+        {
+          "id":"006",
+          "nameTask":"Selección de personal y firma de contrato",
+          "descriptionTask":"Citar al candidato para firmar acuerdo salariales y contrato laboral",
           "completed": false
         }
       ]
