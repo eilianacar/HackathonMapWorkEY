@@ -8,6 +8,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../css/timeline.css";
 import { CheckBox } from "@material-ui/icons";
+import "../css/modalEmployeeMap.css"
 
 const completedTaskStyles = {
   contentStyle: { background: "rgb(33, 150, 243)", color: "#fff" },
@@ -21,12 +22,17 @@ const incompletedTaskStyles = {
   iconStyle: { background: "red", color: "#fff" },
 };
 
-export const MapProgress = ({ tasks = [], onTaskChange }) => {
-  const oncheckBoxChange = (value, taskId)=> {
+export const MapProgress = ({ tasks = [], onTaskChange, handleOpen}) => {
+  const oncheckBoxChange = (value, task)=> {
     const checked = value === "on" ? true : false
-     if ( onTaskChange ){
-      onTaskChange (checked, taskId)
+
+    if (checked){
+      handleOpen(task)
     }
+
+    //  if ( onTaskChange ){
+    //   onTaskChange (checked, taskId)
+    // }
   }
   return (
     <div>
@@ -48,7 +54,7 @@ export const MapProgress = ({ tasks = [], onTaskChange }) => {
               </p>
               <input 
                 type = "checkbox"
-                onChange = {(event)=> oncheckBoxChange(event.target.value, task.id)} />
+                onChange = {(event)=> oncheckBoxChange(event.target.value, task)} />
             </VerticalTimelineElement>
           );
         })}
